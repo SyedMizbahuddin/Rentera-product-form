@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <link rel="icon" href="renteraIcon.ico">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <!-- bootstrap script link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Upload Product</title>
+  </head>
+  <body>
+    
+    <div class="container contact-form">
+      <div class="contact-image">
+        <img src="rentera.png" alt="rocket_contact"/>
+      </div>
+      <form method="post">
+        <h3>Enter the Details</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="firstName" class="form-control" placeholder="First Name " value="" />
+            </div>
+          </div><div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="lastName" class="form-control" placeholder="Last Name " value="" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Enter email" value="" />
+            </div>
+            <div class="form-group">
+              <input type="number" name="number1" class="form-control" placeholder="Enter Phone Number1" value="" />
+            </div>           
+            <div class="form-group">
+              <input type="number" name="number2" class="form-control" placeholder="Enter Phone Number 2 " value="" />
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea name="address" class="form-control" placeholder="Enter Address" style="width: 100%; height: 150px;"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="productName" class="form-control" placeholder="Enter Procduct Name" value="" />
+            </div>
+            <div class="form-group">
+              <textarea name="shortDesc" class="form-control" placeholder="Enter Short Product Desciption" style="width: 100%; height: 95px;"></textarea>
+            </div>           
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea name="longDesc" class="form-control" placeholder="Enter Long Product Desc" style="width: 100%; height: 150px;"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+               <input type="number" class="form-control" name="price"  placeholder="Set A Price Ex: 199" required="">
+            </div>
+            <div class="form-group">
+              <select class="custom-select form-control " name="period">
+                        <option value="period">Select Period</option>
+                        <option value="Day">Day</option>
+                        <option value="Week">Week</option>
+                        <option value="Month">1 Month</option>
+                        <option value="3 Month">3 Months</option>
+                    </select>
+            </div>           
+            <div class="form-group">
+              <select class="custom-select form-control " name="category">
+                    <option value="category">Select Category</option>
+                        <option value="Cars">Car</option>
+                        <option value="Bikes">Bike</option>
+                        <option value="Rooms">Room/Hostels</option>
+                        <option value="Cameras">Camera</option>
+                        <option value="Functionhalls">Function Halls</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Books">Books</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="CovidEquipment">Covid Equipment</option>
+                        <option value="Others">Others</option>
+                    </select>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <select class="custom-select form-control" name="country"  required="">
+                        <option value="choose">Select Country</option>
+                        <option value="india">India</option>
+                    </select>
+            </div>
+            <div class="form-group">
+              <select class="custom-select form-control" name="state" required="">
+                        <option value="choose">Select State</option>
+                        <option value="telangana">Telangana</option>
+                    </select>
+            </div>
+            <div class="form-group">
+              <input type="number" name="zip" class="form-control" placeholder="Enter ZIP" value="" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group row ">
+          <div class="col">
+           <input type="file" class="btn btn-dark form-control file-Btn" name="file"  required="">
+          </div>
+        </div>
+   
+      <div class="form-group">
+        <input type="submit" name="btnSubmit" class="btnContact" value="Send for Verification" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
